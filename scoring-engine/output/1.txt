@@ -1,0 +1,23 @@
+Public Bank Berhad Internet Banking. 26/04/2022, 5:42 PM
+
+Funds Transfer to Other PB Account
+Reference Number: 696748
+
+Transaction Status: Successful
+Transaction Date/Time: 26-04-2022 17:42:31
+From Account: XXXXXX6314 ( Savings )
+Amount: RM 50.00
+
+Beneficiary Account: 3215561527
+
+Beneficiary Name: PMMT SEK YU HUA KAJANG
+Recipient Reference: HIKING 1
+
+Note:
+
+This is a computer generated receipt and does not require a signature.
+
+PUBLIC BANK
+Excellence ts Our Commement
+
+https://www2.pbebank.com/myIBK/apppbb/servlet/BxxxSer vlet?...4-2022%2017%3A42%3A31&ECV=813C 2194704EA78AD314EEB767DF3465 Page 1 of 1
