@@ -8,6 +8,9 @@ from sqlalchemy.orm import sessionmaker
 from db import File, Page
 
 
+def file_as_dict(file):
+    return {"id": file.id, "folder_location": file.folder_location, "file_path": file.file_path}
+
 class Ocr:
     def __init__(self, path, output_folder, engine):
         self.path = path
@@ -33,8 +36,10 @@ class Ocr:
             page_object = Page(file_id=file.id, page=page, orientation=orientation, file_path=file_path)
             session.add(page_object)
             session.flush()
+        res = file_as_dict(file)
         session.commit()
         session.close()
+        return res
 
     def pdf_to_images(self):
         return convert_from_path(self.path)
