@@ -3,10 +3,10 @@ import pika
 
 class Rabbit:
     def __init__(self, ip, port, queue):
-        self.connection = pika.BlockingConnection(pika.ConnectionParameters(ip, port))
-        self.channel = self.connection.channel()
-        self.channel.queue_declare(queue)
+        self.connection = pika.BlockingConnection(pika.ConnectionParameters(ip, port, heartbeat=600))
         self.queue = queue
+        self.channel = self.connection.channel()
+        self.channel.queue_declare(self.queue)
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.connection.close()

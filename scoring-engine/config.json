@@ -1,29 +1,29 @@
 [
    {
       "sheet_name":"Cash Flow",
-      "threshold":50,
+      "threshold":10,
       "keywords":[
          {
             "keyword":"CASH FLOW STATEMENT",
-            "score":50
+            "score":10
          },
          {
             "keyword":"CASH",
-            "score":20
+            "score":10
          }
       ]
    },
    {
       "sheet_name":"Balance Sheet",
-      "threshold":100,
+      "threshold":10,
       "keywords":[
          {
             "keyword":"BALANCE SHEET",
-            "score":50
+            "score":10
          },
          {
             "keyword":"BALANCE",
-            "score":20
+            "score":10
          }
       ]
    }

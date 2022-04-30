@@ -24,6 +24,9 @@ class ScoringEngine:
     def score_folder(self, folder):
         results = []
         for file in os.listdir(folder):
+            if not file.endswith("txt"):
+                continue
+            print(f"scoring file {file}")
             results.append(self.score_file(os.path.join(os.path.abspath(folder), file)))
         return results
 

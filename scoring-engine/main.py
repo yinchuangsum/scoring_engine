@@ -32,7 +32,7 @@ if __name__ == '__main__':
             session.flush()
         session.commit()
         session.close()
-        ch.basic_ack(delivery_tag=method.delivery_tag)
+        ch.basic_ack(delivery_tag=method.delivery_tag) # tell queue success
         print("process done")
 
     rabbit.set_callback(callback)
